@@ -17,7 +17,7 @@ class Stack {
     // and removes it from the stack
     // Underflow if stack is empty
     if (this.items.length == 0) {
-      return "Underflow";
+      return "Stack Underflow";
     }
     return this.items.pop();
   }
@@ -47,10 +47,11 @@ class Stack {
 
 let stack = new Stack();
 
+stack.length = 10;
+
 function StackDataStructure() {
 
-    stack.push("element");
-    stack.push("element 2");
+
     stack.pop();
 
 }
