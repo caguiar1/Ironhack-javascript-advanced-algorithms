@@ -8,7 +8,13 @@ class Stack {
   // push function
   push(element) {
     // push element into the items
+
+    if(this.items.length == 10){
+      return "Stack Overflow";
+    }
+
     this.items.push(element);
+    
   }
 
   // pop function
@@ -47,12 +53,12 @@ class Stack {
 
 let stack = new Stack();
 
-stack.length = 10;
+stack.size = 9;
+
 
 function StackDataStructure() {
 
 
-    stack.pop();
 
 }
 

@@ -1,0 +1,51 @@
+body {
+  background-color: lightgray;
+  height: 100%;
+  width: 100%;  
+  text-align: center;
+}
+
+.container {
+  width: 35%;
+  border: 10px solid #6be6ff;
+  text-align: center;
+  background-color: white;
+  border-bottom: none;
+}
+
+.dataStruc {
+    width: 35%;
+    border: 10px solid #6be6ff;
+    text-align: center;
+    background-color: white;
+    height: 75vh;
+    margin-left: 32.5%;
+    margin-right: 32.5%;
+
+}
+
+input[type=text] {
+    width: 60%;
+ }
+
+.btn {
+ 
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 30%;
+}
+
+#create{
+    background-color: lightskyblue;
+}
+
+#take{
+    background-color: orangered;
+}

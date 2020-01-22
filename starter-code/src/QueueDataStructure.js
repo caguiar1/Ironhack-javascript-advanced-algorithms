@@ -1,7 +1,5 @@
 // Queue class
 class Queue {
-
-    
   // Array is used to implement a Queue
   constructor() {
     this.items = [];
@@ -10,6 +8,11 @@ class Queue {
   // enqueue function
   enqueue(element) {
     // adding element to the queue
+
+    if(this.items.length == 10){
+        return "Queue Overflow";
+      }
+
     this.items.push(element);
   }
 
@@ -18,7 +21,9 @@ class Queue {
     // removing element from the queue
     // returns underflow when called
     // on empty queue
-    if (this.isEmpty()) return "Queue Underflow";
+    if (this.isEmpty()) {
+      return "Queue Underflow";
+    }
     return this.items.shift();
   }
 
@@ -26,7 +31,9 @@ class Queue {
   front() {
     // returns the Front element of
     // the queue without removing it.
-    if (this.isEmpty()) return "No elements in Queue";
+    if (this.isEmpty()) {
+      return "No elements in Queue";
+    }
     return this.items[0];
   }
 
@@ -35,20 +42,17 @@ class Queue {
     // return true if the queue is empty.
     return this.items.length == 0;
   }
-  
+
   // printQueue function
   printQueue() {
     let str = "";
-    for (let i = 0; i < this.items.length; i++) str += this.items[i] + " ";
+    for (let i = 0; i < this.items.length; i++) {
+      str += this.items[i] + " ";
+    }
     return str;
   }
 }
 
 let queue = new Queue();
 
-
-function QueueDataStructure() {
-
-
-
-}
+function QueueDataStructure() {}
